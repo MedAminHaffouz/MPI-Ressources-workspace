@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed header styles */
+.container0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 0 20px; /* Add padding to give space around content */
+}
+
+/* Logo styles */
+.logo {
+    height: 80px; /* Adjust height as needed */
+}
+
+.image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container1 styles */
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust gap between elements */
+    margin-top: 10px; /* Adjust margin-top to create space below fixed header */
+}
+
+/* Links bar styles */
+.links-bar {
+    display: flex;
+    gap: 20px; /* Adjust gap between links */
+    margin-right: 20px; /* Adjust margin-right for spacing from right edge */
+}
+
+.links-bar a {
+    color: dimgrey;
+    text-decoration: none;
+    font-family: "Arial Nova";
+    font-size: 17px;
+}
+
+.links-bar a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Container2 styles */
+/* Container2 styles */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px; /* Adjust margin-top to create space below fixed header */
+    padding: 20px; /* Add padding around content */
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between articles */
+    align-items: center;
+    max-width: 1000px; /* Adjust max-width as needed */
+}
+
+.article-image {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right by default */
+}
+
+.article-image img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto;
+}
+
+.article-text {
+    flex: 1; /* Take remaining space */
+    text-align: center; /* Center align text by default */
+}
+
+.article-text h2{
+    /*width:551px;
+    height:260px;*/
+    font-weight: bold;
+    font-size:  48px;
+    padding-bottom: 0;
+}
+
+
+article-text p{
+    /*width:596px;
+    height:168px;*/
+    font-size:28px;
+    margin: 100px 0;
+}
+/* For the second article where image is on the left */
+.article:nth-child(2) .article-image {
+    order: 1; /* Reorder image to the left */
+    justify-content: flex-start; /* Align image to the left */
+}
+
+.article:nth-child(2) .article-text {
+    order: 2; /* Reorder text to the right */
+    text-align: center; /* Center align text */
+}
+ hr{
+     width:100%
+ }
+
+ h1{
+     font-family: "JetBrains Mono";
+     font-size :36px;
+     font-style:italic;
+ }
+
+ h2{
+     font-family: Wittgenstein;
+ }
+
+ p{
+     font-family: Wittgenstein;
+ }
