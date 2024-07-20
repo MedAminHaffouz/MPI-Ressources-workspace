@@ -58,11 +58,16 @@ body {
     text-decoration: none;
     font-family: "Arial Nova";
     font-size: 17px;
+    transition: box-shadow 0.3s ease;
 }
 
 .links-bar a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+.links-bar a:active{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Container2 styles */
@@ -138,6 +143,22 @@ article-text p{
      font-family: Wittgenstein;
  }
 
+h3{
+    font-family: Wittgenstein;
+}
+
  p{
      font-family: Wittgenstein;
  }
+
+ li{
+     font-family: Wittgenstein;
+ }
+
+ .links{
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-wrap: wrap;
+ }
+
