@@ -2,6 +2,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Fixed header styles */
@@ -57,7 +60,7 @@ body {
     color: dimgrey;
     text-decoration: none;
     font-family: "Arial Nova";
-    font-size: 17px;
+    font-size: 20px;
     transition: box-shadow 0.3s ease;
 }
 
@@ -70,14 +73,20 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+#activated{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Container2 styles */
 /* Container2 styles */
 .container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px; /* Adjust margin-top to create space below fixed header */
+    margin-top: 100px; /* Adjust margin-top to create space below fixed header */
     padding: 20px; /* Add padding around content */
+    flex: 1;
 }
 
 .article {
@@ -112,13 +121,13 @@ body {
     padding-bottom: 0;
 }
 
-
-article-text p{
+.article-text p{
     /*width:596px;
     height:168px;*/
     font-size:28px;
     margin: 100px 0;
 }
+
 /* For the second article where image is on the left */
 .article:nth-child(2) .article-image {
     order: 1; /* Reorder image to the left */
@@ -129,36 +138,112 @@ article-text p{
     order: 2; /* Reorder text to the right */
     text-align: center; /* Center align text */
 }
- hr{
-     width:100%
- }
 
- h1{
-     font-family: "JetBrains Mono";
-     font-size :36px;
-     font-style:italic;
- }
+hr{
+    width:100%
+}
 
- h2{
-     font-family: Wittgenstein;
- }
+h1{
+    font-family: "JetBrains Mono";
+    font-size :36px;
+    font-style:italic;
+}
+
+h2{
+    font-family: Wittgenstein;
+}
 
 h3{
     font-family: Wittgenstein;
 }
 
- p{
-     font-family: Wittgenstein;
- }
+p{
+    font-family: Wittgenstein;
+}
 
- li{
-     font-family: Wittgenstein;
- }
+li{
+    font-family: Wittgenstein;
+}
 
- .links{
-     display: flex;
-     justify-content: center;
-     align-items: flex-start;
-     flex-wrap: wrap;
- }
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#verticalurgent{
+    flex-direction: row;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons a img{
+    width:50px;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.features, .thnks {
+    text-align: center;
+}
+
+.features a {
+    display: block;
+    color: dimgrey;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.features a:hover {
+    text-decoration: underline;
+}
+
+h4{
+    font-style: "Wittgenstein";
+    font-weight: bold;
+}
+
+a{font-style: "Wittgenstein";}
+
+.thnks p{
+    font-size:20px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a-single-vid img{
+    width:300px;
+    height:150px;
+}
+
+.a-single-vid .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cap{
+    display: flex;
+    flex-direction: column;
+}
+
+.cap h3{
+    margin-bottom: 0;
+}
 
